@@ -14,7 +14,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.stream.IntStream;
 
-public class ReportService {
+public class ScanGenerator {
 
     public byte[] generateOdtPdfScan(String templateName) throws Exception {
 

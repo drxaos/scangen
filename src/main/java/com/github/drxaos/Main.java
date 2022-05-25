@@ -8,8 +8,8 @@ public class Main {
         var fin = "3.odt";
         var fout = "3.pdf";
 
-        final ReportService reportService = new ReportService();
-        final byte[] bytes = reportService.generateOdtPdfScan(fin);
+        final ScanGenerator scanGenerator = new ScanGenerator();
+        final byte[] bytes = scanGenerator.generateOdtPdfScan(fin);
         Files.write(Paths.get(fout), bytes);
     }
 }
